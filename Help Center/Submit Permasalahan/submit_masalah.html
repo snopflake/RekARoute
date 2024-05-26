@@ -1,0 +1,336 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Masalah</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .header {
+            background-color: white;
+            padding: 10px 0;
+        }
+        .navbar-nav .nav-link {
+            font-size: 0.9rem;
+            font-weight: 500;
+            color: black!important;
+        }
+        .navbar-nav .nav-link:hover {
+            text-decoration: underline;
+        }
+        .header img {
+            max-height: 115px;
+        }
+        .submit-banner {
+            background-color: #3b404d;
+            color: white;
+            padding: 70px;
+            text-align: center;
+        }
+        .submit-banner h1 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .submit-banner p {
+            font-size: 1.5rem;
+        }
+        .form-section {
+            padding: 60px 0;
+        }
+        .form-group label {
+            font-weight: 500;
+        }
+        .btn-success {
+            color: #fffdfd;
+            border-color: #74af83;
+        }
+        .btn-warning {
+            color: #212529;
+            border-color: #ffe36d;
+        }
+        .btn-success,
+        .btn-warning {
+            padding: 5px 30px;
+            font-weight: 500;
+        }
+        .image-2 {
+            position: absolute;
+            left: 0;
+            bottom: -130px;
+            z-index: -1;
+        }
+        .image-3 {
+            position: absolute;
+            right: 0;
+            bottom: -330px;
+            z-index: -1;
+        }
+        .footer {
+            background-color: #3b404d;
+            color: white;
+            padding: 30px 30px;
+            margin-top: 0px;
+        }
+        .footer .column {
+            margin-bottom: -30px;
+        }
+        .footer .row {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .footer h5 {
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            color: white;
+        }
+        .footer p, .footer a {
+            font-size: 0.7rem;
+            color: #d1d1d1;
+            margin-bottom: 10px;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+        .footer .social-icons a {
+            font-size: 1.5rem;
+            color: #d1d1d1;
+        }
+        .footer .social-icons a:hover {
+            color: #f8f9fa;
+        }
+        .footer-logo {
+            max-height: 50px;
+            margin-top: 10px;
+        }
+        .nav-links p {
+            display: flex;
+            justify-content: space-between;
+        }
+        .nav-links p a:first-child {
+            margin-right: 15px;
+        }
+        .footer .container {
+            margin: 0 auto;
+        }
+
+        /* Tablet Styles */
+        @media (max-width: 768px) {
+            .submit-banner {
+                padding: 50px 20px;
+            }
+            .submit-banner h1 {
+                font-size: 1.5rem;
+            }
+            .submit-banner p {
+                font-size: 1.2rem;
+            }
+            .form-section {
+                padding: 40px 20px;
+            }
+            .form-group label {
+                font-size: 0.9rem;
+            }
+            .footer h5 {
+                font-size: 0.8rem;
+            }
+            .footer p, .footer a {
+                font-size: 0.6rem;
+            }
+            .footer .social-icons a {
+                font-size: 1.2rem;
+            }
+        }
+
+        /* Mobile Styles */
+        @media (max-width: 576px) {
+            .header img {
+                max-height: 80px;
+            }
+            .submit-banner {
+                padding: 30px 10px;
+            }
+            .submit-banner h1 {
+                font-size: 1.2rem;
+            }
+            .submit-banner p {
+                font-size: 1rem;
+            }
+            .form-section {
+                padding: 20px 10px;
+            }
+            .form-group label {
+                font-size: 0.8rem;
+            }
+            .form-group input,
+            .form-group textarea {
+                font-size: 0.9rem;
+            }
+            .btn-success,
+            .btn-warning {
+                font-size: 0.8rem;
+                padding: 5px 20px;
+            }
+            .footer h5 {
+                font-size: 0.7rem;
+            }
+            .footer p, .footer a {
+                font-size: 0.5rem;
+            }
+            .footer .social-icons a {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-6 col-md-4">
+                    <a href="#"><img src="../../src/images/Logo.png" alt="Logo" class="img-fluid"></a>
+                </div>
+                <div class="col-6 col-md-8 text-right">
+                    <nav class="navbar navbar-expand-md navbar-light">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Beranda</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Blog</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Informasi</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rute Angkot</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Rute Bus</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Help Center</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Submit Banner -->
+    <div class="submit-banner">
+        <h1>Submit Permasalahan</h1>
+        <p>Informasikan kendala yang anda alami pada kami</p>
+    </div>
+
+    <!-- Form Section -->
+    <section class="form-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <form>
+                        <div class="form-group row">
+                            <label for="email" class="col-sm-2 col-form-label">Email*</label>
+                            <div class="col-sm-10">
+                                <input type="email" class="form-control" id="email" placeholder="Masukkan email anda">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="subject" class="col-sm-2 col-form-label">Masalah*</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="subject" placeholder="Masukkan masalah yang dialami">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="description" class="col-sm-2 col-form-label">Deskripsi*</label>
+                            <div class="col-sm-10">
+                                <textarea class="form-control" id="description" rows="5" placeholder="Masukkan deskripsi singkat mengenai masalah"></textarea>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-10 offset-sm-2">
+                                <button type="button" class="btn btn-warning" style="background-color: #ffe36d;">Kembali</button>
+                                <button type="submit" class="btn btn-success" style="background-color: #74af83;">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Geometri -->
+        <div class="image-2">
+            <img src="../../src/images/Bundar1.png" alt="Geometric Image" style="width: 170px; height: 340px">
+        </div>
+        <div class="image-3">
+            <img src="../../src/images/Bundar2.png " alt="Geometric Image" style="width: 300px; height: 450px">
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <!-- Column 1 -->
+                <div class="col-12 col-md-6 col-lg-4 column mb-3 mb-lg-0">
+                    <p>Malang Public Transportation Information</p>
+                    <p>Supporting the 7th SDG's impact goal</p>
+                    <img src="../../src/images/LogoFooter.png" alt="Logo 1" class="footer-logo">
+                    <img src="../../src/images/Thumbnail-SDG-7 1.png" alt="Logo 2" class="footer-logo">
+                </div>
+                <!-- Column 2 -->
+                <div class="col-12 col-md-6 col-lg-2 column mb-3 mb-lg-0">
+                    <h5>Navigation</h5>
+                    <div class="nav-links">
+                        <p><a href="#">Beranda</a> </p>
+                        <p><a href="#">Rute Angkot</a></p>
+                        <p><a href="#">Blog</a></p>
+                        <p><a href="#">Rute Bus</a></p>
+                        <p><a href="#">Informasi</a></p>
+                        <p><a href="#">Help Center</a></p>
+                    </div>
+                </div>
+                <!-- Column 3 -->
+                <div class="col-12 col-md-6 col-lg-2 column mb-3 mb-lg-0">
+                    <h5>Quick Links</h5>
+                    <p><a href="#">FAQs</a></p>
+                    <p><a href="#">Submit Permasalahan</a></p>
+                </div>
+                <!-- Column 4 -->
+                <div class="col-12 col-md-6 col-lg-2 column mb-3 mb-lg-0">
+                    <h5>Contact Us</h5>
+                    <p class="d-flex align-items-center"><img src="../../src/images/Location.png" alt="lokasi" style="width: 20px; height: 20px; margin-right: 10px;">Malang, Jawa Timur</p>
+                    <p class="d-flex align-items-center"><img src="../../src/images/Phone.png" alt="telp" style="width: 20px; height: 20px; margin-right: 10px;">(+62) 845 1111 0000</p>
+                    <p class="d-flex align-items-center"><img src="../../src/images/Email.png" alt="email" style="width: 20px; height: 20px; margin-right: 10px;">RekARoute@gmail.com</p>
+                </div>
+                <!-- Column 5 -->
+                <div class="col-12 col-md-6 col-lg-2 column">
+                    <h5>Find Us</h5>
+                    <div class="social-icons d-flex">
+                        <a href="#"><img src="../../src/images/Instagram.png" alt="ig" style="width: 40px; height: 30px;"></a>
+                        <a href="#"><img src="../../src/images/Facebook.png" alt="fb" style="width: 40px; height: 30px;"></a>
+                        <a href="#"><img src="../../src/images/Twitter.png" alt="twt" style="width: 30px; height: 27px;"></a>
+                        <a href="#"><img src="../../src/images/YouTube.png" alt="yt" style="width: 40px; height: 30px;"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
