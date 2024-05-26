@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Help Center</title>
+    <title>Contoh FAQ</title>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
@@ -16,7 +16,7 @@
         }
         .navbar-nav .nav-link {
             font-size: 0.9rem;
-            font-weight: 500; 
+            font-weight: 500;
             color: black !important;
         }
         .navbar-nav .nav-link:hover {
@@ -25,89 +25,46 @@
         .header img {
             max-height: 115px;
         }
-        .help-banner {
-            background-color: #3b404d;
-            color: white;
-            padding: 70px;
+        .faq-section {
+            padding: 60px 0;
+            padding-bottom: 0;
+        }
+        .article-box {
+            border-radius: 10px;
+            text-align: justify;
+            margin-bottom: 60px;
+        }
+        .article-box h3 {
+            font-size: 1.8rem;
+        }
+        .faq-box {
+            border-radius: 10px;
+            text-align: justify;
+        }
+        .faq-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .faq-number {
+            display: inline-block;
+            width: 80px;
+            height: 70px;
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
             text-align: center;
-        }
-        .help-banner h1 {
-            margin-bottom: 30px;
+            padding: 4%;
+            line-height: 30px;
+            border-radius: 10px;
             font-size: 2rem;
-        }
-        .help-banner p {
-            font-size: 1.5rem;
-        }
-        .content {
-            padding: 20px;
-            margin-top: 25px;
-        }
-        .content h2 {
-            font-size: 1.8rem;
-        }
-        .content p {
-            font-size: 1.3rem;
-        }
-        .btn-green {
-            background-color: #74af83;
-            color: white;
-            font-size: 2rem; 
-            padding: 12px 67px;
-            border-radius: 20px;
-        }
-        .image-1 {
-            position: absolute;
-            right: 50px;
-            bottom: -40px;
-            z-index: -1;
-        }
-        .image-2 {
-            position: absolute;
-            left: 0;
-            bottom: -250px;
-            z-index: -1;
-        }
-        .image-3 {
-            position: absolute;
-            right: 0;
-            bottom: -720px;
-            z-index: -1;
-        }
-        .faq {
-            margin-top: 50px;
-        }
-        .faq h2 {
-            font-size: 1.8rem;
-        }
-        .faq p {
-            font-size: 1.3rem;
-        }
-        .question {
-            border: 1px solid black;
-            background-color: white;
-            padding: 25px;
-            margin-top: 20px;
-            font-size: 1.3rem;
-            width: 100%;
-            max-width: 990px;
-            height: auto;
-            position: relative;
-            padding-right: 100px;
-            cursor: pointer;
-        }
-        .question::after {
-            content: ">";
-            position: absolute;
-            right: 50px;
-            top: 50%;
-            transform: translateY(-50%);
-            font-size: 1.5rem;
+            font-weight: 500;
+            margin-right: 15px;
         }
         .footer {
             background-color: #3b404d;
             color: white;
             padding: 30px 30px;
-            margin-top: 30px;
+            margin-top: 0px;
         }
         .footer .column {
             margin-bottom: -30px;
@@ -121,7 +78,8 @@
             margin-bottom: 15px;
             color: white;
         }
-        .footer p, .footer a {
+        .footer p,
+        .footer a {
             font-size: 0.7rem;
             color: #d1d1d1;
             margin-bottom: 10px;
@@ -151,51 +109,34 @@
         .footer .container {
             margin: 0 auto;
         }
-        .answer {
-            display: none;
-            margin-top: 15px;
-            padding: 15px;
-            background-color: #ffffff;
-        }
 
         /* Tablet Styles */
         @media (max-width: 768px) {
-            .help-banner {
-                padding: 50px 20px;
+            .navbar-nav .nav-link {
+                font-size: 0.8rem;
             }
-            .help-banner h1 {
-                font-size: 1.5rem;
+            .header img {
+                max-height: 90px;
             }
-            .help-banner p {
-                font-size: 1.2rem;
+            .faq-section {
+                padding: 40px 0;
             }
-            .content h2 {
-                font-size: 1.5rem;
+            .article-box h3 {
+                font-size: 1.6rem;
             }
-            .content p {
-                font-size: 1rem;
+            .faq-box h3 {
+                font-size: 1.6rem;
             }
-            .btn-green {
-                font-size: 1.5rem; 
-                padding: 10px 40px;
-            }
-            .faq h2 {
-                font-size: 1.5rem;
-            }
-            .faq p {
-                font-size: 1rem;
-            }
-            .question {
-                font-size: 1rem;
-                padding: 20px;
-            }
-            .question::after {
-                right: 20px;
+            .faq-number {
+                width: 70px;
+                height: 60px;
+                font-size: 1.8rem;
             }
             .footer h5 {
                 font-size: 0.8rem;
             }
-            .footer p, .footer a {
+            .footer p,
+            .footer a {
                 font-size: 0.6rem;
             }
             .footer .social-icons a {
@@ -205,48 +146,31 @@
 
         /* Mobile Styles */
         @media (max-width: 576px) {
+            .navbar-nav .nav-link {
+                font-size: 0.7rem;
+            }
             .header img {
-                max-height: 80px;
+                max-height: 70px;
             }
-            .help-banner {
-                padding: 30px 10px;
+            .faq-section {
+                padding: 20px 0;
             }
-            .help-banner h1 {
-                font-size: 1.2rem;
+            .article-box h3 {
+                font-size: 1.4rem;
             }
-            .help-banner p {
-                font-size: 1rem;
+            .faq-box h3 {
+                font-size: 1.4rem;
             }
-            .content {
-                padding: 10px;
-            }
-            .content h2 {
-                font-size: 1.2rem;
-            }
-            .content p {
-                font-size: 0.9rem;
-            }
-            .btn-green {
-                font-size: 1.2rem; 
-                padding: 8px 30px;
-            }
-            .faq h2 {
-                font-size: 1.2rem;
-            }
-            .faq p {
-                font-size: 0.9rem;
-            }
-            .question {
-                font-size: 0.9rem;
-                padding: 15px;
-            }
-            .question::after {
-                right: 10px;
+            .faq-number {
+                width: 60px;
+                height: 50px;
+                font-size: 1.5rem;
             }
             .footer h5 {
                 font-size: 0.7rem;
             }
-            .footer p, .footer a {
+            .footer p,
+            .footer a {
                 font-size: 0.5rem;
             }
             .footer .social-icons a {
@@ -297,39 +221,59 @@
         </div>
     </header>
 
-    <!-- Help Banner -->
-    <div class="help-banner">
-        <h1>Help Center</h1>
-        <p>Apa yang bisa kami bantu untuk anda?</p>
-    </div>
-
-    <!-- Content -->
-    <div class="container content">
-        <h2>Lapor Permasalahan</h2>
-        <p>Memiliki kendala yang tidak umum? Anda bisa menginformasikannya pada kami!</p>
-        <a href="#" class="btn btn-green">Click here!</a>
-
-        <!-- FAQ Section -->
-        <div class="faq">
-            <h2>FAQ</h2>
-            <p>Frequently Asked Questions</p>
-            <div class="question">Bagaimana cara menggunakan Rek-A Route?</div>
-            <div class="question">Bagaimana cara melihat peta rute dengan Rek A Route?</div>
-            <div class="question">Apakah Rek-A Route menyediakan informasi real-time?</div>
-            <div class="question">Bagaimana cara cek jadwal keberangkatan transportasi di Rek-A Route?</div>
+    <!-- FAQ Section -->
+    <section class="faq-section" style="background: linear-gradient(to right, #ACCFB5, #FFEEA7);">
+        <div class="container">
+            <div class="row">
+                <!-- Main Article -->
+                <div class="col-md-6">
+                    <div class="article-box p-4 bg-white">
+                        <img src="../src/images/Artikel.png" alt="Artikel" class="img-fluid mb-3">
+                        <h3>Bagaimana cara menggunakan Rek-A Route?</h3>
+                        <p class="mb-1">26 April 2024</p>
+                        <p>Untuk menggunakan Rek-A Route, ikuti langkah-langkah berikut:</p>
+                        <ol>
+                            <li><b>Akses Website:</b> Buka browser web dan akses website Rek-A Route di <a href="#">alamat website Rek-A Route</a>.</li>
+                            <li><b>Masukkan Lokasi Awal dan Tujuan:</b> Pada halaman utama, Anda akan menemukan kolom pencarian. Masukkan lokasi awal dan tujuan perjalanan Anda.</li>
+                            <li><b>Pilih Jenis Transportasi:</b> Setelah memasukkan lokasi awal dan tujuan, pilih jenis transportasi yang ingin Anda gunakan, apakah angkutan umum atau bus sekolah.</li>
+                            <li><b>Tampilkan Rute:</b> Tekan tombol "Cari Rute" atau tombol serupa untuk menampilkan rute yang tersedia.</li>
+                            <li><b>Lihat Hasil:</b> Rek-A Route akan menampilkan rute yang tersedia beserta informasi terkait jadwal keberangkatan, estimasi waktu tempuh, dan tarif biaya yang berlaku.</li>
+                            <li><b>Pilih Rute:</b> Pilih rute yang sesuai dengan kebutuhan Anda.</li>
+                            <li><b>Informasi Tambahan:</b> Jika Anda memerlukan informasi tambahan seperti peta rute atau detail halte, Anda dapat mengeklik rute yang dipilih untuk melihat informasi lebih lanjut.</li>
+                            <li><b>Pergi ke Halte:</b> Dengan informasi yang Anda dapatkan dari Rek-A Route, pergilah ke halte atau tempat pemberhentian yang sesuai untuk menunggu transportasi umum atau bus sekolah.</li>
+                        </ol>
+                        <p>Dengan mengikuti langkah-langkah di atas, Anda dapat menggunakan Rek-A Route dengan mudah dan efektif untuk merencanakan perjalanan menggunakan transportasi umum di Malang.</p>
+                    </div>
+                </div>
+                <!-- Other FAQs -->
+                <div class="col-md-6">
+                    <div class="faq-box p-4">
+                        <h3>FAQ Lainnya</h3>
+                        <div class="faq-item">
+                            <span class="faq-number">01</span>
+                            <a href="#" class="question" style="color: black;">Apakah Rek-A Route hanya tersedia untuk kota Malang?</a>
+                        </div>
+                        <div class="faq-item">
+                            <span class="faq-number">02</span>
+                            <a href="#" class="question" style="color: black;">Apakah Rek-A Route menyediakan informasi tarif?</a>
+                        </div>
+                        <div class="faq-item">
+                            <span class="faq-number">03</span>
+                            <a href="#" class="question" style="color: black;">Apakah Rek-A Route tersedia dalam versi seluler?</a>
+                        </div>
+                        <div class="faq-item">
+                            <span class="faq-number">04</span>
+                            <a href="#" class="question" style="color: black;">Bagaimana cara mencari rute angkutan umum di Rek A Route?</a>
+                        </div>
+                        <div class="faq-item">
+                            <span class="faq-number">05</span>
+                            <a href="#" class="question" style="color: black;">Bagaimana cara memberikan masukan kepada Rek A Route?</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-
-        <!-- Geometri -->
-        <div class="image-1">
-            <img src="../src/images/Panah.png" alt="Geometric Image" style="width: 90px; height: 190px">
-        </div>
-        <div class="image-2">
-            <img src="../src/images/Bundar1.png" alt="Geometric Image" style="width: 170px; height: 340px">
-        </div>
-        <div class="image-3">
-            <img src="../src/images/Bundar2.png" alt="Geometric Image" style="width: 300px; height: 450px">
-        </div>
-    </div>
+    </section>
 
     <!-- Footer -->
     <footer class="footer">
@@ -364,16 +308,13 @@
                 <div class="col-12 col-md-6 col-lg-2 column mb-3 mb-lg-0">
                     <h5>Contact Us</h5>
                     <p class="d-flex align-items-center">
-                        <img src="../src/images/Location.png" alt="lokasi" style="width: 20px; height: 20px; margin-right: 10px;">
-                        Malang, Jawa Timur
+                        <img src="../src/images/Location.png" alt="lokasi" style="width: 20px; height: 20px; margin-right: 10px;">Malang, Jawa Timur
                     </p>
                     <p class="d-flex align-items-center">
-                        <img src="../src/images/Phone.png" alt="telp" style="width: 20px; height: 20px; margin-right: 10px;">
-                        (+62) 845 1111 0000
+                        <img src="../src/images/Phone.png" alt="telp" style="width: 20px; height: 20px; margin-right: 10px;">(+62) 845 1111 0000
                     </p>
                     <p class="d-flex align-items-center">
-                        <img src="../src/images/Email.png" alt="email" style="width: 20px; height: 20px; margin-right: 10px;">
-                        RekARoute@gmail.com
+                        <img src="../src/images/Email.png" alt="email" style="width: 20px; height: 20px; margin-right: 10px;">RekARoute@gmail.com
                     </p>
                 </div>
                 <!-- Column 5 -->
