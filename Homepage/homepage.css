@@ -1,4 +1,613 @@
+body {
+    font-family: 'Poppins';
+    height: 100%;
+}
 
-.logo.left {
-    margin-left: auto;
+      /* css navbar */
+  .navbar-brand .angkotbiru {
+    height: 110px;  
+    width: auto;
+    padding-left: 20px;
   }
+
+  /* css homepage */
+  .container-fluid {
+    padding: 0;
+  }
+
+  /* mengatur jarak antar kata pada navbar*/
+  .nav-item .nav-link {
+    font-size: 25px;
+    margin-right: 50px; /* Atur sesuai keinginan  */
+  }
+    
+  /* mengatur jarak antar kata pada navbar*/
+  .nav-link .nav-item:last-child {
+    font-size: 25px;
+    margin-right: 15px; /* Menghapus margin pada elemen terakhir */
+  } 
+    .overlay-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        opacity: 0.8;
+    }
+
+    .overlay-container {
+        position: relative;
+        min-height: 830px;
+        width: 100%;
+    }
+
+    .overlay-text {
+        position: relative;
+        z-index: 1;
+        margin-left: 25px;
+    }
+
+    .title {
+        margin-top: 243px;
+        font-size: 65px;
+        font-weight: 600;
+        color: #fff;
+    }
+
+    .subtitle {
+        margin-top: 10px;
+        font-size: 45px;
+        color: #fff;
+    }
+
+    .btn {
+        margin-top: 25px;
+        border-radius: 50px;
+        font-size: 30px;
+        font-weight: 500;
+    }
+
+    .jelajahi-rute {
+        position: relative;
+        background-color: white;
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+
+    #judul-jr {
+        color: #3b404d;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        justify-content: center;
+        padding-top: 10px;
+        padding-bottom: 30px;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }    
+
+    /* judul artikel */
+    .headline {
+        position: relative;
+        background-color: white;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        color: #3b404d;
+        text-align: center;
+        font-size: 60px;
+        font-weight: 700;
+        justify-content: center;
+        margin-top: 40px;
+        margin-bottom: 20px;
+    }
+
+    .card1 .card2 {
+        margin-top: 20px;
+    }
+
+    .pertama {
+        color: #3b404d;
+        font-size: 45px;
+        margin-left: 15px;
+    }
+
+    .kedua {
+        color: #3b404d;
+        font-size: 37px;
+        margin-bottom: 40px;
+        margin-left: 15px;
+    }
+
+    .right-text {
+        color: #3b404d;
+        text-align: right;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 2px;
+        margin-right: 25px;
+    }
+
+    /* artikel section */
+    .artikel-homepage {
+        margin: 15px;
+        display: flex;
+    }
+
+    .artikel-homepage h3 {
+        margin-top: 20px;
+        margin-left: 10px;
+        font-size: 30px;
+        color: #3b404d;
+    }
+
+    .artikel-homepage p {
+        margin-top: 8px;
+        margin-left: 10px;
+        margin-bottom: 80px;
+        font-size: 25px;
+        color: #3b404d;
+    }
+    @media (max-width: 675px) {
+        body {
+            padding-right: 0;
+            object-fit: cover;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        /* Mengatur ukuran font pada navbar */
+        .navbar-nav .nav-item .nav-link {
+            font-size: 18px;
+            margin-right: 10px; /* Atur sesuai keinginan */
+        }
+
+        .navbar-brand .angkotbiru {
+            height: 65px; /* Mengatur ulang ukuran logo */
+        }
+
+        /* Mengatur jarak padding navbar */
+        .navbar {
+            padding: 10px;
+        }
+
+        /* Mengatur ukuran font judul dan subtitle pada overlay-text */
+        .overlay-text .title {
+            font-size: 40px;
+            margin-top: 100px;
+        }
+
+        .overlay-text .subtitle {
+            font-size: 20px;
+        }
+
+        .overlay-text .btn {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        /* Mengatur padding dan margin pada bagian jelajahi rute */
+        .jelajahi-rute {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        #judul-jr {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .overlay-container {
+            width: 320px;
+            height: 576px;
+            position: relative; /* Pastikan posisi relatif untuk overlay-container */
+            overflow: hidden;
+        }
+
+        .overlay-image {
+            width: fit-content;
+            max-width: auto; /* Memastikan gambar tidak melebihi lebar kontainer */
+            object-fit: fill; /* Menjaga aspek rasio gambar */
+            object-position: center;
+            margin-bottom: 0;
+        }
+    
+        .overlay-text {
+            position: absolute;
+            z-index: 5;
+            margin-left: 20px;
+            margin-top: 100px;
+        }
+    
+        .title {
+            margin-top: 283px;
+            font-size: 65px;
+            font-weight: 600;
+            color: #fff;
+        }
+    
+        .subtitle {
+            margin-top: 10px;
+            font-size: 45px;
+            color: #fff;
+        }
+    
+        .btn {
+            margin-top: 55px;
+            border-radius: 50px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        .jelajahi-rute {
+            position: relative;
+            background-color: white;
+            padding-top: 60px;
+            padding-bottom: 50px;
+        }
+
+        #judul-jr {
+            color: #3b404d;
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }    
+
+        /* judul artikel */
+        .headline {
+            color: #3b404d;
+            text-align: center;
+            font-size: 60px;
+            font-weight: 700;
+            justify-content: center;
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+
+        .pertama {
+            color: #3b404d;
+            font-size: 40px;
+            margin-top: 10px;
+            margin-left: 15px;
+        }
+
+        .kedua {
+            color: #3b404d;
+            font-size: 35px;
+            margin-bottom: 40px;
+            margin-left: 15px;
+        }
+
+        .right-text {
+            color: #3b404d;
+            text-align: right;
+            font-size: 22px;
+            margin-top: 20px;
+            margin-bottom: 15px;
+        }
+
+        /* artikel section */
+        .artikel-homepage {
+            margin: 15px;
+            display: flex;
+        }
+
+        .artikel-homepage h3 {
+            margin-top: 20px;
+            margin-left: 10px;
+            font-size: 30px;
+            color: #3b404d;
+        }
+
+        .artikel-homepage p {
+            margin-top: 8px;
+            margin-left: 10px;
+            margin-bottom: 80px;
+            font-size: 22px;
+            color: #3b404d;
+        }
+
+        .container-fluid {
+            padding-left: 50px;
+        }
+
+    }
+    /* Media query untuk ukuran layar 320px */
+    @media (max-width: 320px) {
+        body {
+            padding-right: 0;
+            object-fit: cover;
+        }
+
+        .container-fluid {
+            padding: 0;
+        }
+
+        /* Mengatur ukuran font pada navbar */
+        .navbar-nav .nav-item .nav-link {
+            font-size: 18px;
+            margin-right: 10px; /* Atur sesuai keinginan */
+        }
+
+        .navbar-brand .angkotbiru {
+            height: 75px; /* Mengatur ulang ukuran logo */
+        }
+
+        /* Mengatur jarak padding navbar */
+        .navbar {
+            padding: 10px;
+        }
+
+        /* Mengatur ukuran font judul dan subtitle pada overlay-text */
+        .overlay-text .title {
+            font-size: 40px;
+            margin-top: 100px;
+        }
+
+        .overlay-text .subtitle {
+            font-size: 20px;
+        }
+
+        .overlay-text .btn {
+            font-size: 20px;
+            margin-top: 15px;
+        }
+
+        /* Mengatur padding dan margin pada bagian jelajahi rute */
+        .jelajahi-rute {
+            padding-top: 30px;
+            padding-bottom: 20px;
+        }
+
+        #judul-jr {
+            font-size: 30px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .overlay-container {
+            width: 320px;
+            height: 576px;
+            position: relative; /* Pastikan posisi relatif untuk overlay-container */
+            overflow: hidden;
+        }
+
+        .overlay-image {
+            width: fit-content;
+            max-width: auto; /* Memastikan gambar tidak melebihi lebar kontainer */
+            object-fit: fill; /* Menjaga aspek rasio gambar */
+            object-position: center;
+            margin-bottom: 0;
+        }
+    
+        .overlay-text {
+            position: absolute;
+            z-index: 5;
+            margin-left: 20px;
+            margin-top: 100px;
+        }
+    
+        .title {
+            margin-top: 283px;
+            font-size: 65px;
+            font-weight: 600;
+            color: #fff;
+        }
+    
+        .subtitle {
+            margin-top: 10px;
+            font-size: 45px;
+            color: #fff;
+        }
+    
+        .btn {
+            margin-top: 55px;
+            border-radius: 50px;
+            font-size: 30px;
+            font-weight: 500;
+        }
+
+        /* Mengatur ukuran headline */
+        .headline {
+            font-size: 30px;
+            padding-top: 5px;
+            padding-bottom: 10px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Mengatur ukuran font pada bagian artikel */
+        .pertama {
+            font-size: 24px;
+        }
+
+        .kedua {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .right-text {
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .artikel-homepage h3 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .artikel-homepage p {
+            font-size: 14px;
+            margin-bottom: 40px;
+        }
+    }
+
+     /* css footer */
+.footer {
+    background-color: #3b404d;
+    color: #fff;
+    padding: 40px 40px;
+  }
+
+.footer-info {
+    margin-left: 80px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 20px;
+}
+  
+.footer-navigation {
+    padding-left: 50px;
+}
+
+.footer .footer-logo {
+    max-width: 100px;
+    margin: 10px 0;
+    margin-top: 20px;
+}
+  
+.footer h4 {
+    margin-bottom: 15px;
+}
+  
+.footer a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact {
+    font-size: 18px;
+}
+  
+.footer a:hover {
+    text-decoration: underline;
+}
+  
+.social-icons a {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #fff;
+}
+
+@media (min-width: 675px) {
+    body {
+        padding-right: 0;
+        object-fit: cover;
+    }
+
+    .footer-info, .footer-logo {
+        margin-left: 30px;
+    }
+
+    .footer-navigation {
+        padding-left: 2px;
+    }
+
+    .footer-info {
+        margin-bottom: 5px;
+    }
+    .footer-logo {
+        margin-top: 5px;
+        height: auto
+    }
+    .footer h4 {
+        margin-bottom: 15px;
+        margin-left: 30px;
+    }
+      
+    .footer a {
+        margin-left: 30px;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-contact {
+        margin-left: 0px;
+    }
+
+    .footer-contact p {
+        margin-left: 30px;
+    }
+    
+    .footer a:hover {
+        margin-left: 20px;
+        text-decoration: underline;
+    }
+      
+    .social-icons a {
+        margin-left: 30px;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+/* Media query untuk ukuran layar 320px */
+@media (max-width: 320px) {
+    body {
+        padding-right: 0;
+        object-fit: cover;
+    }
+
+    .footer-info, .footer-logo {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .footer-navigation {
+        padding-left: 2px;
+    }
+
+    .footer-info {
+        margin-bottom: 5px;
+    }
+
+    .footer-logo {
+        margin-top: 0px;
+        height: auto
+    }
+    .footer h4 {
+        margin-bottom: 15px;
+        margin-left: 8px;
+        font-size: 15px;
+    }
+      
+    .footer a {
+        margin-left: 8px;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-contact {
+        margin-left: 0px;
+        font-size: 15ps;
+    }
+
+    .footer-contact p {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    .footer a:hover {
+        margin-left: 8px;
+        text-decoration: underline;
+    }
+      
+    .social-icons a {
+        margin-left: 8px;
+        font-size: 20px;
+        color: #fff;
+    }
+}

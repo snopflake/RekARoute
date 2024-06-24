@@ -1,0 +1,666 @@
+      /* css navbar */
+      .navbar-brand .angkotbiru {
+        height: 110px;  
+        width: auto;
+        padding-left: 20px;
+      }
+    
+      /* css homepage */
+      .container-fluid {
+        padding: 0;
+      }
+    
+      /* mengatur jarak antar kata pada navbar*/
+      .nav-item .nav-link {
+        font-size: 25px;
+        margin-right: 50px; /* Atur sesuai keinginan  */
+      }
+        
+      /* mengatur jarak antar kata pada navbar*/
+      .nav-link .nav-item:last-child {
+        font-size: 25px;
+        margin-right: 15px; /* Menghapus margin pada elemen terakhir */
+      } 
+
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+.info-header {
+    background-color: #3B404D;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 1920px) and (min-width: 1440px ) {
+    .info-header {
+        padding: 70px 0;
+        font-size: 28px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        background-color: #fff;
+        margin-right: -280px;
+    }
+
+    .info-header {
+        background-color: #3B404D;
+        margin-right: -280px;
+    }
+}
+
+/*/////////////////////////// Body ////////////////////////////////*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #FFEEA7 5%, #fff 100%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+}
+
+.transport-options { /* konten Pilih Jenis Transportasi */
+    padding: 50px 0;
+    text-align: left;
+    margin-left: -6px;
+}
+
+.transport-options h3 { /* tulisan Pilih Jenis Transportasi */
+    margin-left: 89px;
+}
+
+.transport-options .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.transport-options button { /* kotak daftar bus */
+    background-color: #74AF83;
+    color: white;
+    border: none;
+    padding: 15px 30px; 
+    font-size: 16px;
+    cursor: pointer;
+    width: 748px;
+    height: 80px;
+    margin: 0 5px 0 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.transport-options button:hover { /* perubahan warna saat kursor menuju kotak daftar bus */
+    background-color: #45a049;
+}
+
+#btn-angkot { /* kotak daftar angkot */
+    background-color: white;
+    color: #74AF83;
+    margin-left: 17px;
+    border: 1px solid #74AF83;
+}
+
+#btn-angkot:hover { /* perubahan warna saat kursor berada di kotak daftar angkot */
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.form-jenisangkot { /* konten Pilih Jenis Angkot */
+    text-align: left;
+    margin-left: 50px;
+}
+
+.form-jenisangkot h3 { /* tulisan Pilih Jenis Angkot */
+    padding: 10px 0;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.form-jenisangkot select { /* kotak ADL */
+    padding: 15px; 
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Poppins", sans-serif;
+}
+
+.angkot-info {
+    text-align: center;
+    padding: 38px 0;
+}
+
+.angkot-info .container { /* konten Tujuan Angkutan-Rute Perlintasan */
+    display: flex;
+    flex-direction: column;
+    margin-top: -190px;
+    margin-left: 491px;
+}
+
+.angkot-info .form-tujuan { /* konten Tujuan Angkutan */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.angkot-info .form-tujuan h3 { /* tulisan Tujuan Angkutan */
+    margin-bottom: 27px;
+}
+ 
+.angkot-info .form-tujuan input { /* kotak tujuan angkutan */
+    padding: 15px;
+    font-size: 16px;
+    width: 717px;
+    margin-bottom: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Poppins", sans-serif;
+}
+
+.angkot-info .form-rute { /* konten Rute Perlintasan */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.angkot-info .form-rute h3 { /* tulisan Rute Perlintasan*/
+    margin-bottom: 27px;
+}
+
+.angkot-info .form-rute input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 20px;
+}
+
+.angkot-info .route-list { /* kotak Rute Perlintasan dan mencakup didalamnya*/
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 500px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+    width: 726px;
+}
+
+.route-list ul {
+    list-style-type: disc; /* Menggunakan bullet points berbentuk lingkaran penuh */
+    padding-left: 20px; /* Memberikan padding kiri untuk jarak dari tepi */
+    margin-top: -5px;
+    margin-bottom: 3px;
+    margin-left: 10px;
+}
+
+.route-list li {
+    margin-bottom: 5px; /* Memberikan jarak antar item */
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+@media (max-width:800px) {
+    .transport-options .buttons {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: -30px;
+        justify-content: center;
+    }
+
+    #btn-angkot {
+        background-color: white;
+        color: #74AF83;
+        text-align: left;
+        margin: auto;
+        border: 1px solid black;
+        border-bottom: #fff;
+    }
+ 
+    #btn-bus {
+        background-color: #74AF83;
+        color: white;
+        text-align: left;
+        margin: auto;
+        border: 1px solid black;
+        border-top: #fff;       
+    }
+
+    .buttons:hover {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1920px) and (min-width: 1800px) {
+    .transport-options {
+        font-size: 22px;
+    }
+
+    .transport-options button {
+        width: 866px;
+        font-size: 22px;
+    }
+
+    #btn-angkot {
+        height: 100px;
+    }
+
+    #btn-bus {
+        height: 100px;
+    }
+
+    #jenis-angkot {
+        font-size: 22px;
+    }
+
+    #tujuan-angkutan {
+        font-size: 22px;
+    }
+
+    .form-jenisangkot h3 {
+        font-size: 27px;
+    }
+
+    .angkot-info {
+        font-size: 22px;
+    }
+
+    .angkot-info .container { /* konten Tujuan Angkutan-Rute Perlintasan */
+        margin-left: 977px;
+        margin-top: -220px;
+    }
+
+    .angkot-info .form-rute {
+        max-height: 900px;
+    }
+
+    .angkot-info .form-tujuan input { /* kotak tujuan angkutan */
+        width: 834px;
+    }
+
+    .angkot-info .route-list { /* kotak Rute Perlintasan dan mencakup didalamnya*/
+        width: 843px;
+    }
+
+    .route-list li {
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 1440px) {
+    .angkot-info .container { /* konten Tujuan Angkutan-Rute Perlintasan */
+        margin-left: 687px;
+    }
+
+    .form-jenisangkot { /* konten Pilih Jenis Angkot */
+        margin-left: 33px;
+    }
+
+    .angkot-info .form-tujuan input { /* kotak tujuan angkutan */
+        width: 615px;
+    }
+
+    .angkot-info .route-list {
+        width: 625px;
+    }
+
+    .transport-options button {
+        width: 645px;
+    }
+
+    .angkot-info {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .angkot-info .form-tujuan input {
+        width: 538px;
+    }
+    .angkot-info .route-list {
+        width: 550px;
+    }
+
+    .angkot-info .container { /* konten Tujuan Angkutan-Rute Perlintasan */      
+        margin-left: 10px;
+        margin-top: -10px;
+    }
+}
+
+@media (max-width: 675px) {
+    .transport-options h3 { /* tulisan Pilih Jenis Transportasi */
+        margin-left: 76px;
+    }
+
+    .form-jenisangkot { /* konten Pilih Jenis Angkot */
+        margin-left: 32px;
+    }
+
+    #btn-angkot {
+        width: 510px;
+        margin-left: 14px;      
+    }
+
+    #btn-bus {
+        width: 510px;
+        margin-left: 14px; 
+    }
+
+    .angkot-info .form-tujuan input {
+        width: 488px;
+    }
+
+    .angkot-info .route-list {
+        width: 500px;
+    }
+}
+
+@media (max-width:320px) {
+    #btn-angkot {
+        width: 470px;
+        margin-left: 80px;
+    }
+
+    #btn-bus {
+        width: 470px;
+        margin-left: 80px;
+    }
+
+    .form-jenisangkot h3 {
+        margin-left: 43px;
+        margin-top: -30px;
+    }
+
+    .angkot-info {
+        margin-left: 93px;
+        margin-top: -30px;
+    }
+
+    .angkot-info .form-rute {
+        margin-left: -40px;
+        margin-top: -30px;
+    }
+
+    .angkot-info .form-tujuan input {
+        width: 265px;
+    }
+
+    .angkot-info .route-list {
+        width: 451px;
+    }
+
+    .form-jenisangkot { /* konten Pilih Jenis Angkot */
+        margin-left: 22px;
+    }
+
+    .form-jenisangkot select {
+        width: 200px;
+        font-size: 14px;
+        margin-left: 42px;
+    }
+
+    .angkot-info .form-tujuan h3 { /* tulisan Tujuan Angkutan */
+        margin-left: -40px;
+    }
+
+    .angkot-info .form-tujuan input { /* kotak tujuan angkutan */
+        width: 240px;
+        font-size: 14px;
+        margin-left: -40px;
+    }
+    
+}
+
+
+/*/////////////////////////// Footer ////////////////////////////////*/
+
+.footer {
+    background-color: #3b404d;
+    color: #fff;
+    padding: 40px 40px;
+  }
+
+.footer-info {
+    margin-left: 80px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 20px;
+}
+  
+.footer-navigation {
+    margin-left: 50px;
+}
+.footer .footer-logo {
+    max-width: 100px;
+    margin: 10px 0;
+    margin-top: 20px;
+}
+  
+.footer h4 {
+    margin-bottom: 15px;
+}
+  
+.footer a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-contact {
+    font-size: 18px;
+}
+  
+.footer a:hover {
+    text-decoration: underline;
+}
+  
+.social-icons a {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #fff;
+}
+
+@media (min-width: 675px) {
+    body {
+        padding-right: 0;
+        object-fit: cover;
+    }
+
+    .footer-info, .footer-logo {
+        margin-left: 30px;
+    }
+
+    .footer-navigation {
+        margin-left: 2px;
+    }
+
+    .footer-info {
+        margin-bottom: 5px;
+    }
+    .footer-logo {
+        margin-top: 5px;
+        height: auto
+    }
+    .footer h4 {
+        margin-bottom: 15px;
+        margin-left: 30px;
+    }
+      
+    .footer a {
+        margin-left: 30px;
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-contact {
+        margin-left: 0px;
+    }
+
+    .footer-contact p {
+        margin-left: 30px;
+    }
+    
+    .footer a:hover {
+        margin-left: 20px;
+        text-decoration: underline;
+    }
+      
+    .social-icons a {
+        margin-left: 30px;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+/* Media query untuk ukuran layar 320px */
+@media (max-width: 320px) {
+    body {
+        padding-right: 0;
+        object-fit: cover;
+    }
+
+    .footer-info, .footer-logo {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+
+    .footer-navigation {
+        margin-left: 2px;
+    }
+    
+    .footer-info {
+        margin-bottom: 5px;
+    }
+
+    .footer-logo {
+        margin-top: 0px;
+        height: auto
+    }
+    .footer h4 {
+        margin-bottom: 15px;
+        margin-left: 8px;
+        font-size: 15px;
+    }
+      
+    .footer a {
+        margin-left: 8px;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-contact {
+        margin-left: 0px;
+        font-size: 15ps;
+    }
+
+    .footer-contact p {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    .footer a:hover {
+        margin-left: 8px;
+        text-decoration: underline;
+    }
+      
+    .social-icons a {
+        margin-left: 8px;
+        font-size: 20px;
+        color: #fff;
+    }
+}
+/*/////////////////////////// Sidebar ////////////////////////////////*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 80%;
+    background-color: #3B404D;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1000;
+    max-height: 750px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+    margin-right: 30px;
+    border-bottom: 1px solid white;
+    margin-left: 30px;
+}
+
+.sidebar a:hover {
+    background-color: #575d6a;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.hamburger-menu, .hamburger-menuafter {
+    cursor: pointer;
+}
+
+.hamburger-menuafter {
+    color: white;
+    margin: 10px;
+    margin-left: 200px;
+}
+
+/* Hamburger menu color change when sidebar is active */
+.hamburger-menu.open i, .hamburger-menuafter.open i {
+    color: white;
+}
+
+/* Styling for the image and text in the sidebar */
+.sidebar-image {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
+    margin-top: 100%;
+}
+
+.sidebar-text {
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 18px;
+    margin-top: -6%;
+}
+

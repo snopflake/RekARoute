@@ -1,0 +1,199 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.bagiankiri {
+    background-color: #3b404d;
+}
+
+/* Bagian 1 */
+
+.header {
+    height: 100px;
+    background-color: #3b404d;
+}
+
+img.Home {
+    width: 58px;
+    height: auto;
+
+}
+
+img.Angkot {
+    width: 40px;
+    height: auto;
+}
+
+h3 {
+    font-size: 21px;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    text-align: end;
+}
+
+.image-link img {
+    transition: transform 0.2s;
+}
+
+.image-link img:hover {
+    transform: scale(1.1);
+}
+
+.image-link img:active {
+    transform: scale(0.9);
+}
+
+/* Bagian 2 */
+
+.lokasi {
+    height: 190px;
+    background-color: #4F535F;
+}
+
+img.PTP {
+    width: 15px;
+    height: auto;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.input-field {
+    font-size: 21px;
+    font-weight: 300;
+    padding-left: 20px;
+    color: #9D9D9D;
+    height: 50px;
+}
+
+/* Bagian 3 */
+
+.sesitombol {
+    height: auto;
+    background-color: #3b404d;
+}
+
+.saatini, .trackyourroute {
+    transition: transform 0.2s;
+}
+
+.saatini {
+    background-color: #D9D9D9;
+    font-size: 20px;
+    color: #4F535F;
+    width: 80%;
+}
+
+.saatini:hover {
+    transform: scale(1.05);
+}
+
+.saatini:active {
+    transform: scale(0.95);
+}
+
+img.logolokasi {
+    width: 30px;
+    height: auto;
+}
+
+.trackyourroute {
+    background-color: #74AF83;
+    font-size: 21px;
+    font-weight: 500;
+    color: #FFFFFF;
+    width: 80%;
+}
+
+.trackyourroute:hover {
+    transform: scale(1.05);
+}
+
+.trackyourroute:active {
+    transform: scale(0.95);
+}
+
+.logo-container {
+    width: 200px;
+    height: auto;
+}
+
+.copyright {
+    font-size: 16px;
+    font-weight: 300;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.peta1 {
+    object-fit: cover;
+}
+
+
+@media (max-width: 1920px) {
+    /* Styles for devices with a max width of 1920px */
+}
+
+@media (max-width: 675px) {
+
+    
+    .lokasi {
+        height: 130px;
+    }
+
+    .header h3 {
+        font-size: 18px;
+    }
+
+    .input-field {
+        font-size: 18px;
+        height: 45px;
+    }
+
+    .saatini, .trackyourroute {
+        font-size: 18px;
+    }
+
+    .logo-container {
+        width: 30%;
+    }
+
+    img.logolokasi {
+        width: 25px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header h3 {
+        font-size: 16px;
+    }
+
+    .input-field {
+        font-size: 16px;
+        height: 40px;
+    }
+
+    .saatini, .trackyourroute {
+        font-size: 16px;
+    }
+
+    .logo-container {
+        width: 30%;
+    }
+
+    img.logolokasi {
+        width: 20px;
+    }
+}

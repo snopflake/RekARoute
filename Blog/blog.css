@@ -1,0 +1,251 @@
+body {
+  font-family: 'Poppins';
+  height: 100%;
+}
+
+.container-fluid {
+  padding-right: 0;
+}
+  /* css navbar */
+  .navbar-brand .angkotbiru {
+    height: 110px;  
+    width: auto;
+    padding-left: 20px;
+  }
+
+  /* css homepage */
+  .container-fluid {
+    padding: 0;
+  }
+
+  /* mengatur jarak antar kata pada navbar*/
+  .nav-item .nav-link {
+    font-size: 25px;
+    margin-right: 50px; /* Atur sesuai keinginan  */
+  }
+    
+  /* mengatur jarak antar kata pada navbar*/
+  .nav-link .nav-item:last-child {
+    font-size: 25px;
+    margin-right: 15px; /* Menghapus margin pada elemen terakhir */
+  } 
+
+  .judul1 {
+    color: #3b404d;
+    font-size: 35px;
+    padding-left: 40px;
+  }
+
+  .deskripsi-judul {
+    color: #3b404d;
+    padding-left: 40px;
+  }
+
+  .artikel {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .artikel h3 {
+    color: #3b404d;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+
+  .artikel2 h3 {
+    color: #3b404d;
+    margin-left: 40px;
+    margin-bottom: 10px;
+  }
+
+  .artikel p {
+    color: #3b404d;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  .artikel2 p {
+    color: #3b404d;
+    font-size: 20px;
+    margin-left: 40px;
+    margin-bottom: 20px;
+  }
+
+  .artikel img {
+    align-self:  flex-start;
+    margin-bottom: 4px;
+    margin-left: 30px;
+  }
+
+  .artikel2 img {
+    align-self:  flex-start;
+    margin-bottom: 4px;
+    margin-left: 30px;
+  }
+
+  .footer {
+    background-color: #3b404d;
+    color: #fff;
+    padding: 40px 40px;
+  }
+  
+  .footer-info {
+    margin-left: 80px;
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 20px;
+  }
+  
+  .footer-navigation {
+    margin-left: 50px;
+  }
+  .footer .footer-logo {
+    max-width: 100px;
+    margin: 10px 0;
+    margin-top: 20px;
+  }
+  
+  .footer h4 {
+    margin-bottom: 15px;
+  }
+  
+  .footer a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .footer-contact {
+    font-size: 18px;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+    margin-right: 8px;
+    color: #fff;
+  }
+  
+    /* Device kedua: width 675px, height 1872px */
+    @media (min-width: 675px) {
+      body {
+          font-size: 2vw;
+      }
+      .footer-info, .footer-logo {
+          margin-left: 30px;
+      }
+    
+      .footer-navigation {
+        margin-left: 2px;
+      }
+    
+      .footer-info {
+          margin-bottom: 5px;
+      }
+      .footer-logo {
+          margin-top: 5px;
+          height: auto
+      }
+      .footer h4 {
+          margin-bottom: 15px;
+          margin-left: 30px;
+      }
+        
+      .footer a {
+          margin-left: 30px;
+          font-size: 18px;
+          color: #fff;
+          text-decoration: none;
+      }
+      
+      .footer-contact {
+          margin-left: 0px;
+      }
+    
+      .footer-contact p {
+          margin-left: 30px;
+      }
+      
+      .footer a:hover {
+          margin-left: 20px;
+          text-decoration: underline;
+      }
+        
+      .social-icons a {
+          margin-left: 30px;
+          font-size: 20px;
+          color: #fff;
+      }
+    }
+
+    /* Device ketiga: width 320px, height 568px */
+    @media (max-width: 320px) {
+      /* Tambahkan aturan CSS di sini */
+      .navbar-brand img {
+        height: 50px;
+      }
+      body {
+          font-size: 1vw;
+      }
+      .col-sm-4 {
+          width: 100%;
+          margin-bottom: 20px;
+      }
+      .footer-info, .footer-logo {
+        margin-left: 10px;
+        font-size: 15px;
+    }
+  
+    .footer-info {
+        margin-bottom: 5px;
+    }
+  
+    .footer-navigation {
+      margin-left: 2px;
+    }
+  
+    .footer-logo {
+        margin-top: 0px;
+        height: auto
+    }
+    .footer h4 {
+        margin-bottom: 15px;
+        margin-left: 8px;
+        font-size: 15px;
+    }
+      
+    .footer a {
+        margin-left: 8px;
+        font-size: 12px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-contact {
+        margin-left: 0px;
+        font-size: 15ps;
+    }
+  
+    .footer-contact p {
+        margin-left: 8px;
+        font-size: 12px;
+    }
+    
+    .footer a:hover {
+        margin-left: 8px;
+        text-decoration: underline;
+    }
+      
+    .social-icons a {
+        margin-left: 8px;
+        font-size: 20px;
+        color: #fff;
+    }
+    }
+  
+

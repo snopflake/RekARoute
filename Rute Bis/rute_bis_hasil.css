@@ -1,0 +1,267 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.bagiankiri {
+    background-color: #3b404d;
+}
+
+/* Header */
+
+.header {
+    height: 100px;
+    background-color: #3b404d;
+}
+
+img.Home {
+    width: 58px;
+    height: auto;
+}
+
+img.Angkot {
+    width: 40px;
+    height: auto;
+}
+
+h3 {
+    font-size: 21px;
+    color: white;
+    font-weight: 500;
+    margin: 0;
+    text-align: end;
+}
+
+.image-link img {
+    transition: transform 0.2s;
+}
+
+.image-link img:hover {
+    transform: scale(1.1);
+}
+
+.image-link img:active {
+    transform: scale(0.9);
+}
+
+/* Back Section */
+
+.back {
+    height: 80px;
+    background-color: #4F535F;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 20px;
+}
+
+img.backimg {
+    width: 30px;
+    height: auto;
+}
+
+.back h3 {
+    margin-left: 135px;
+    font-size: 21px;
+    color: white;
+    font-weight: 500;
+}
+
+/* Hasil Section */
+
+.hasil {
+    background: linear-gradient(180deg, rgb(255, 239, 171) 0%, rgb(172, 207, 181) 100%);
+}
+
+.card {
+    background-color: white;
+    display: flex;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.angkot-img {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 32px;
+    height: auto;
+}
+
+.waktu {
+    margin-left: 15px;
+    font-family: 'Poppins';
+    font-size: 15px;
+    font-weight: 400;
+    color: black;
+}
+
+.durasi {
+    margin-left: 150px;
+} 
+
+.orang-img {
+    width: 25px;
+    height: auto; 
+    margin-left: 50px;
+    margin-top: -20px;
+}
+
+.next-img {
+    width: 25px;
+    height: auto;
+    margin-top: -20px;
+    margin-left: -5px;
+}
+
+.angkotkecil-img {
+    width: 23px;
+    height: auto;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+.card .track {
+    background-color: #74AF83;
+    color: white;
+    height: 20px;
+    width: auto;
+    margin-left: 10px;
+    margin-top: -15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: 'Poppins';
+}
+
+.info-text {
+    font-family: 'Poppins';
+    font-size: 10px;
+    color: #9B9B9B;
+    margin-left: 55px;
+    margin-top: -6px;
+}
+
+.orangkecil-img {
+    width: 15px;
+    height: auto; 
+    margin-left: 50px;
+    margin-top: -10px
+}
+
+.durasijln-text {
+    font-family: 'Poppins';
+    font-size: 10px;
+    margin-top: -5px;
+    color: #9B9B9B;
+}
+
+.harga {
+    background-color: #3B404D;
+    color: white;
+    width: 82%;
+    height: 30px;
+    margin-left: 50px;
+    border: none;
+    border-radius: 10px;
+    font-size: 10px;
+    font-family: 'Poppins';
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 15px; 
+    box-sizing: border-box;
+    margin-top: -3px;
+    margin-bottom: 10px;
+    }
+
+.harga-text {
+    text-align: left;
+}
+
+.nominal {
+    text-align: right;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 675px) {
+
+    .durasi{
+        margin-left: 375px;
+    }
+
+    .header h3, .back h3 {
+        font-size: 18px;
+    }
+
+    .back h3 {
+        margin-left: 245px;
+    }
+
+    img.Home, img.Back {
+        width: 45px;
+    }
+
+    .waktu {
+        font-size: 12px;
+    }
+
+    .info-text {
+        margin-left: 55px;
+    }
+
+    .harga {
+        width: 85%;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 320px) {
+
+    .durasi{
+        margin-left: 70px;
+    }
+
+    .header h3, .back h3 {
+        font-size: 16px;
+    }
+
+    .back h3 {
+        margin-left: 70px;
+    }
+
+    img.Home, img.Back {
+        width: 35px;
+    }
+
+    .waktu {
+        font-size: 10px;
+    }
+
+    .info-text {
+        margin-left: 55px;
+    }
+
+    .harga {
+        width: 80%;
+        margin-left: 50px;
+    }
+}

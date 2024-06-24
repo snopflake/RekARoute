@@ -4,27 +4,34 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contoh FAQ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         body {
             font-family: 'Poppins', sans-serif;
         }
-        .header {
-            background-color: white;
-            padding: 10px 0;
+        /* css navbar */
+        .navbar-brand .angkotbiru {
+            height: 110px;  
+            width: auto;
+            padding-left: 20px;
         }
-        .navbar-nav .nav-link {
-            font-size: 0.9rem;
-            font-weight: 500;
-            color: black !important;
+
+        /* css homepage */
+        .container-fluid {
+            padding: 0;
         }
-        .navbar-nav .nav-link:hover {
-            text-decoration: underline;
+        /* mengatur jarak antar kata pada navbar*/
+        .navbar-nav .nav-item {
+            font-size: 28px;
+            margin-right: 50px; /* Atur sesuai keinginan  */
         }
-        .header img {
-            max-height: 115px;
-        }
+        /* mengatur jarak antar kata pada navbar*/
+        .navbar-nav .nav-item:last-child {
+            font-size: 28px;
+            margin-right: 15px; /* Menghapus margin pada elemen terakhir */
+        } 
         .faq-section {
             padding: 60px 0;
             padding-bottom: 0;
@@ -60,167 +67,198 @@
             font-weight: 500;
             margin-right: 15px;
         }
+        /* /////FOOTER/////////////////////////////////////////////////// */
         .footer {
-            background-color: #3b404d;
-            color: white;
-            padding: 30px 30px;
-            margin-top: 0px;
+        background-color: #3b404d;
+        color: #fff;
+        padding: 40px 40px;
+    }
+
+    .footer-info {
+        margin-left: 80px;
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+    
+    .footer .footer-logo {
+        max-width: 100px;
+        margin: 10px 0;
+        margin-top: 20px;
+    }
+    
+    .footer h4 {
+        margin-bottom: 15px;
+    }
+    
+    .footer a {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    .footer-contact {
+        font-size: 18px;
+    }
+    
+    .footer a:hover {
+        text-decoration: underline;
+    }
+    
+    .social-icons a {
+        font-size: 20px;
+        margin-right: 8px;
+        color: #fff;
+    }
+
+    @media (min-width: 675px) {
+        body {
+            padding-right: 0;
+            object-fit: cover;
         }
-        .footer .column {
-            margin-bottom: -30px;
+
+        .footer-info, .footer-logo {
+            margin-left: 30px;
         }
-        .footer .row {
-            display: flex;
-            flex-wrap: wrap;
+
+        .footer-info {
+            margin-bottom: 5px;
         }
-        .footer h5 {
-            font-size: 0.9rem;
+
+        .footer-navigation {
+            margin-left: 2px;
+        }
+    
+        .footer-logo {
+            margin-top: 5px;
+            height: auto
+        }
+        .footer h4 {
             margin-bottom: 15px;
-            color: white;
+            margin-left: 30px;
         }
-        .footer p,
+        
         .footer a {
-            font-size: 0.7rem;
-            color: #d1d1d1;
-            margin-bottom: 10px;
+            margin-left: 30px;
+            font-size: 18px;
+            color: #fff;
             text-decoration: none;
         }
+        
+        .footer-contact {
+            margin-left: 0px;
+        }
+
+        .footer-contact p {
+            margin-left: 30px;
+        }
+        
         .footer a:hover {
+            margin-left: 20px;
             text-decoration: underline;
         }
-        .footer .social-icons a {
-            font-size: 1.5rem;
-            color: #d1d1d1;
+        
+        .social-icons a {
+            margin-left: 30px;
+            font-size: 20px;
+            color: #fff;
         }
-        .footer .social-icons a:hover {
-            color: #f8f9fa;
+    }
+    /* Media query untuk ukuran layar 320px */
+    @media (max-width: 320px) {
+        body {
+            padding-right: 0;
+            object-fit: cover;
         }
+
+        .footer-info, .footer-logo {
+            margin-left: 10px;
+            font-size: 15px;
+        }
+
+        .footer-info {
+            margin-bottom: 5px;
+        }
+
+        .footer-navigation {
+            margin-left: 2px;
+        }
+    
         .footer-logo {
-            max-height: 50px;
-            margin-top: 10px;
+            margin-top: 0px;
+            height: auto
         }
-        .nav-links p {
-            display: flex;
-            justify-content: space-between;
+        .footer h4 {
+            margin-bottom: 15px;
+            margin-left: 8px;
+            font-size: 15px;
         }
-        .nav-links p a:first-child {
-            margin-right: 15px;
+        
+        .footer a {
+            margin-left: 8px;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
         }
-        .footer .container {
-            margin: 0 auto;
-        }
-
-        /* Tablet Styles */
-        @media (max-width: 768px) {
-            .navbar-nav .nav-link {
-                font-size: 0.8rem;
-            }
-            .header img {
-                max-height: 90px;
-            }
-            .faq-section {
-                padding: 40px 0;
-            }
-            .article-box h3 {
-                font-size: 1.6rem;
-            }
-            .faq-box h3 {
-                font-size: 1.6rem;
-            }
-            .faq-number {
-                width: 70px;
-                height: 60px;
-                font-size: 1.8rem;
-            }
-            .footer h5 {
-                font-size: 0.8rem;
-            }
-            .footer p,
-            .footer a {
-                font-size: 0.6rem;
-            }
-            .footer .social-icons a {
-                font-size: 1.2rem;
-            }
+        
+        .footer-contact {
+            margin-left: 0px;
+            font-size: 15ps;
         }
 
-        /* Mobile Styles */
-        @media (max-width: 576px) {
-            .navbar-nav .nav-link {
-                font-size: 0.7rem;
-            }
-            .header img {
-                max-height: 70px;
-            }
-            .faq-section {
-                padding: 20px 0;
-            }
-            .article-box h3 {
-                font-size: 1.4rem;
-            }
-            .faq-box h3 {
-                font-size: 1.4rem;
-            }
-            .faq-number {
-                width: 60px;
-                height: 50px;
-                font-size: 1.5rem;
-            }
-            .footer h5 {
-                font-size: 0.7rem;
-            }
-            .footer p,
-            .footer a {
-                font-size: 0.5rem;
-            }
-            .footer .social-icons a {
-                font-size: 1rem;
-            }
+        .footer-contact p {
+            margin-left: 8px;
+            font-size: 12px;
         }
+        
+        .footer a:hover {
+            margin-left: 8px;
+            text-decoration: underline;
+        }
+        
+        .social-icons a {
+            margin-left: 8px;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
     </style>
 </head>
 
 <body>
-    <!-- Header -->
-    <header class="header">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-6 col-md-4">
-                    <a href="#"><img src="../src/images/Logo.png" alt="Logo" class="img-fluid"></a>
-                </div>
-                <div class="col-6 col-md-8 text-right">
-                    <nav class="navbar navbar-expand-md navbar-light">
-                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarNav">
-                            <ul class="navbar-nav ml-auto">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Beranda</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Blog</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Informasi</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Rute Angkot</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Rute Bus</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Help Center</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </div>
+            <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: white;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img class="angkotbiru" src="/src/images/Homepage/Logo.png" alt="Rek A Route Logo">
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="/Homepage/homepage.html">Beranda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Blog/blog.html">Blog</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Informasi/informasi.html">Informasi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Rute Angkot/rute_angkot.html">Rute Angkot</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/Rute Bis/rute_bis.html">Rute Bus</a>
+              </li>
+              <li class="nav-item active">
+                <a class="nav-link" href="/Help Center/help_center.html">Help Center<span class="sr-only">(current)</span></a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </header>
-
+      </nav>
     <!-- FAQ Section -->
     <section class="faq-section" style="background: linear-gradient(to right, #ACCFB5, #FFEEA7);">
         <div class="container">
@@ -228,7 +266,7 @@
                 <!-- Main Article -->
                 <div class="col-md-6">
                     <div class="article-box p-4 bg-white">
-                        <img src="../src/images/Artikel.png" alt="Artikel" class="img-fluid mb-3">
+                        <img src="/src/images/Help Center/Artikel.png" alt="Artikel" class="img-fluid mb-3">
                         <h3>Bagaimana cara menggunakan Rek-A Route?</h3>
                         <p class="mb-1">26 April 2024</p>
                         <p>Untuk menggunakan Rek-A Route, ikuti langkah-langkah berikut:</p>
@@ -274,62 +312,63 @@
             </div>
         </div>
     </section>
-
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <!-- Column 1 -->
-                <div class="col-12 col-md-6 col-lg-4 column mb-3 mb-lg-0">
-                    <p>Malang Public Transportation Information</p>
-                    <p>Supporting the 7th SDG's impact goal</p>
-                    <img src="../src/images/LogoFooter.png" alt="Logo 1" class="footer-logo">
-                    <img src="../src/images/Thumbnail-SDG-7 1.png" alt="Logo 2" class="footer-logo">
-                </div>
-                <!-- Column 2 -->
-                <div class="col-12 col-md-6 col-lg-2 column mb-3 mb-lg-0">
-                    <h5>Navigation</h5>
-                    <div class="nav-links">
-                        <p><a href="#">Beranda</a></p>
-                        <p><a href="#">Rute Angkot</a></p>
-                        <p><a href="#">Blog</a></p>
-                        <p><a href="#">Rute Bus</a></p>
-                        <p><a href="#">Informasi</a></p>
-                        <p><a href="#">Help Center</a></p>
-                    </div>
-                </div>
-                <!-- Column 3 -->
-                <div class="col-12 col-md-6 col-lg-2 column mb-3 mb-lg-0">
-                    <h5>Quick Links</h5>
-                    <p><a href="#">FAQs</a></p>
-                    <p><a href="#">Submit Permasalahan</a></p>
-                </div>
-                <!-- Column 4 -->
-                <div class="col-12 col-md-6 col-lg-2 column mb-3 mb-lg-0">
-                    <h5>Contact Us</h5>
-                    <p class="d-flex align-items-center">
-                        <img src="../src/images/Location.png" alt="lokasi" style="width: 20px; height: 20px; margin-right: 10px;">Malang, Jawa Timur
-                    </p>
-                    <p class="d-flex align-items-center">
-                        <img src="../src/images/Phone.png" alt="telp" style="width: 20px; height: 20px; margin-right: 10px;">(+62) 845 1111 0000
-                    </p>
-                    <p class="d-flex align-items-center">
-                        <img src="../src/images/Email.png" alt="email" style="width: 20px; height: 20px; margin-right: 10px;">RekARoute@gmail.com
-                    </p>
-                </div>
-                <!-- Column 5 -->
-                <div class="col-12 col-md-6 col-lg-2 column">
-                    <h5>Find Us</h5>
-                    <div class="social-icons d-flex">
-                        <a href="#"><img src="../src/images/Instagram.png" alt="ig" style="width: 40px; height: 30px;"></a>
-                        <a href="#"><img src="../src/images/Facebook.png" alt="fb" style="width: 40px; height: 30px;"></a>
-                        <a href="#"><img src="../src/images/Twitter.png" alt="twt" style="width: 30px; height: 27px;"></a>
-                        <a href="#"><img src="../src/images/YouTube.png" alt="yt" style="width: 40px; height: 30px;"></a>
-                    </div>
+        <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-4 mb-4">
+            <div class="footer-info">
+                <p>Malang public transportation information platform</p>
+                <p>Supporting the 7th SDG's impact goal</p>
+                <img src="/src/images/Homepage/LogoThumbnail.png" alt="Rek-A Route Logo" class="footer-logo">
+                <img src="/src/images/Homepage/Thumbnail-SDG-7 1.png" alt="SDG 7 Logo" class="footer-logo">
+            </div>
+            </div>
+            <div class="col-md-2 mb-4">
+            <div class="footer-navigation">
+                <h4>Navigation</h4>
+                <ul class="list-unstyled">
+                <li><a href="/Homepage/homepage.html">Beranda</a></li>
+                <li><a href="/Blog/blog.html">Blog</a></li>
+                <li><a href="/Informasi/informasi.html">Informasi</a></li>
+                <li><a href="/Rute Angkot/rute_angkot.html">Rute Angkot</a></li>
+                <li><a href="/Rute Bis/rute_bis.html">Rute Bus</a></li>
+                <li><a href="/Help Center/help_center.html">Help Center</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-md-2 mb-4">
+            <div class="footer-quick-link">
+                <h4>Quick Link</h4>
+                <ul class="list-unstyled">
+                <li><a href="/Help Center/help_center.html">FAQs</a></li>
+                <li><a href="/Help Center/Submit Permasalahan/submit_masalah.html">Submit Permasalahan</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="col-md-2 mb-4">
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p><i class="bi bi-geo-alt-fill"></i>   Malang, Jawa Timur</p>
+                <p><i class="bi bi-telephone-fill"></i>   (+62) 845 1111 0000</p>
+                <p><i class="mailto:RekARoute@gmail.com"><i class="bi bi-envelope-fill"></i>   RekARoute@gmail.com</i></p>
+            </div>
+            </div>
+            <div class="col-md-2 mb-4">
+            <div class="footer-social">
+                <h4>Find Us</h4>
+                <div class="social-icons">
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-youtube"></i></a>
                 </div>
             </div>
+            </div>
+        </div>
         </div>
     </footer>
+	
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>

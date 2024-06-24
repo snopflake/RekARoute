@@ -1,76 +1,95 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasil</title>
-    <link rel="stylesheet" href="styhasil.css">
+    <title>Rute Angkot | Rek-A Route</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="rute_bis_hasil.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
-    <div class="sidebar">
-        <div class="header">
-            <img src="src/images/Home.png" alt="home" class="left-img">
-            <span class="rute">
-                Rute Bus
-            </span>
-            <img src="src/images/tayooo.png" alt="bus" class="right-img">
-        </div>
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-md-4 text-light d-flex flex-column" id="left-panel">
+                
+                <div class="header d-flex align-items-center justify-content-between p-3">
+                    <a href="/Homepage/homepage.html" class="image-link">
+                        <img class="Home" src="/src/images/Logo/DT Home.png" alt="Home">
+                    </a>
+                    <h3>Rute Bus</h3>
+                    <a href="#" class="image-link">
+                        <img class="Angkot" src="/src/images/Logo/DT Bus.png" alt="Angkot">
+                    </a>
+                </div>
 
-        <div class="kotak-kedua">
-            <div class="tampilan"> 
-                <img src="src/images/Back.png" alt="back" class="back">
-                <span class="text">
-                    Hasil Rute
-                </span>
+                <div class="back d-flex align-items-center bg-secondary p-3">
+                    <a href="/Rute Bis/rute_bis.html" class="image-link">
+                        <img class="backimg" src="/src/images/Logo/Back.png" alt="Back">
+                    </a>
+                    <h3 class="hasilrute">Hasil Rute</h3>
+                </div>
+
+                <div class="hasil d-flex flex-column p-3 flex-grow-1">
+
+                    <div class="card mb-3">
+                        <div class="kiri d-flex align-items-center">
+                            <div class="item">
+                                <img src="/src/images/Logo/DT Bus Color.png" alt="bus" class="angkot-img">
+                            </div>
+
+                            <div class="item">
+                                <div class="waktu">
+                                    <span class="jam">05.45 - 06.18</span>
+                                    <span class="durasi">33 menit</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="kanan">
+
+                            <div class="item">
+                                <img src="/src/images/Logo/DT Walk.png" alt="org" class="orang-img">
+                                <img src="/src/images/Logo/Back Reverse.png" alt="next" class="next-img">
+                                <img src="/src/images/Logo/DT Bus Color.png" alt="angkot" class="angkotkecil-img">
+                                <input type="submit" value="BUS I" class="track">
+                            </div>
+                
+                            <div class="item">
+                                <span class="info-text">05.50 Dari Halte Veteran</span>
+                            </div>
+                
+                            <div class="item">
+                                <img src="/src/images/Logo/DT Walk.png" alt="org" class="orangkecil-img">
+                                <span class="durasijln-text">05 menit</span>
+                            </div>
+                
+                            <div class="item">
+                                <button class="harga">
+                                    <span class="harga-text">Harga ></span>
+                                    <span class="nominal">Rp 5.000,00</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
-        </div>
 
-        <div class="bg-box">
-            <div class="box"> 
-                <div class="item">
-                    <img src="src/images/tayooo (1).png" alt="bis" class="bis-img">
-                    <span class="jam-text">
-                        05.45 - 06.18
-                    </span>
-                    <span class="durasi-text">
-                        33 menit
-                    </span> 
-                </div>
-    
-                <div class="item">
-                    <img src="src/images/Walking Skin Type 1.png" alt="org" class="orang-img">
-                    <img src="src/images/Back (1).png" alt="next" class="next-img">
-                    <img src="src/images/tayooo (1).png" alt="bis" class="biskecil-img">
-                    <input type="submit" value="Bus 1" class="track">
-                </div>
-    
-                <div class="item">
-                    <span class="info-text">
-                        05.50 Dari Halte Veteran
-                    </span>
-                </div>
-    
-                <div class="item">
-                    <img src="src/images/Walking Skin Type 1.png" alt="org" class="orgkecil-img">
-                    <span class="durasijln-text">
-                        05 menit
-                    </span>
-                </div>
-    
-                <button class="detail">
-                    <span class="detail-text">Detail ></span>
-                    <span class="harga-text">Rp 0,00</span>
-                </button>
+            <div class="col-md-8 p-0">
+                <img src="/src/images/2 Peta Filkom Smansa.png" alt="Peta Filkom Alun" class="img-fluid w-100 h-100 peta1">
             </div>
         </div>
     </div>
 
-    <div class="peta">
-        <img src="src/images/image 10.png" alt="peta malang" class="gambar-peta">
-    </div>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

@@ -1,53 +1,65 @@
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rute Bis</title>
-    <link rel="stylesheet" href="sty.css">
+    <title>Rute Bus | Rek-A Route</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="rute_bis.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
-<body> 
-    
-    <div class="sidebar">
-        <div class="header">
-            <img src="src/images/Home.png" alt="home" class="left-img">
-            <span class="text">
-                Rute Bus
-            </span>
-            <img src="src/images/tayooo.png" alt="bus" class="right-img">
-        </div>
-    
-        <div class="container">
-            <div class="lokasi"> 
-                <img src="src/images/Icon Point + Garis Putus.png" alt="poin" class="poin">
-                <div class="input-container">
-                    <input type="text" placeholder="Pilih lokasi awal" class="awal">
-                    <p>
-                        <input type="text" placeholder="Pilih lokasi akhir" class="akhir">
+
+<body>
+    <div class="container-fluid">
+        <div class="row no-gutters">
+            <div class="col-md-4 bg-dark text-light d-flex flex-column">
+                <div class="header d-flex align-items-center justify-content-between p-3">
+                    <a href="/Homepage/homepage.html" class="image-link">
+                        <img class="Home" src="/src/images/Logo/DT Home.png" alt="Home">
+                    </a>
+                    <h3>Rute Bus</h3>
+                    <a href="#" class="image-link">
+                        <img class="Angkot" src="/src/images/Logo/DT Bus.png" alt="Angkot">
+                    </a>
+                </div>
+
+                <div class="lokasi d-flex align-items-center bg-secondary p-3">
+                    <img class="PTP" src="/src/images/Logo/DT PTP.png" alt="Point to Point">
+                    <div class="input-container ml-3">
+                        <input type="text" class="form-control mb-3 input-field" placeholder="Pilih Lokasi Awal">
+                        <input type="text" class="form-control input-field" placeholder="Pilih Lokasi Akhir">
+                    </div>
+                </div>
+
+                <div class="sesitombol d-flex flex-column align-items-center flex-grow-1 p-3">
+                    <button type="submit" class="btn btn-light btn-block saatini mb-3 d-flex align-items-center justify-content-center">
+                        <img class="logolokasi mr-2" src="/src/images/Logo/Lokasi.png" width="47" height="43" alt="Logo Lokasi">
+                        <span>Dari Lokasi Saat Ini</span>
+                    </button>
+                    <a href="/Rute Bis/rute_bis_hasil.html" class="btn btn-success btn-block trackyourroute mb-3 d-flex align-items-center justify-content-center">
+                        <span>Track Your Route!</span>
+                    </a>
+                    <div class="logo-container mt-auto mb-0 p-3">
+                        <img src="/src/images/Rek A Route Putih.png" alt="Logo" class="Logo img-fluid">
+                    </div>
+                    <p class="copyright mb-0">
+                        @2024 | All Right Reserved.
                     </p>
-                </div>         
+                </div>
+            </div>
+
+            <div class="col-md-8 p-0">
+                <img src="/src/images/1 Peta Malang.png" alt="Peta Malang" class="img-fluid w-100 h-100 peta1">
             </div>
         </div>
-
-        <button class="ambil-lokasi">
-            <img src="src/images/Logo Lokasi.png" alt="logo" class="logo-lokasi">
-            Dari lokasi saat ini
-        </button>
-
-        <input type="submit" value="Track Your Route!" class="track">
-
-        <div class="bg">
-            <img src="src/images/Group 117.png" alt="icon" class="icon">
-        </div>  
     </div>
 
-    <div class="bg-icon">
-        <div class="peta">
-            <img src="src/images/Peta Malang.png" alt="peta malang" class="gambar-peta">
-        </div>
-    </div>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>

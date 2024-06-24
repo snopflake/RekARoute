@@ -1,0 +1,361 @@
+body {
+    background: linear-gradient(to bottom, #ACCFB5, #ffeea7);;
+    padding-right: 0;
+    margin-right: 0;
+    height: 100%;
+
+    /* css navbar */
+.navbar-brand .angkotbiru {
+    height: 110px;  
+    width: auto;
+    padding-left: 20px;
+}
+
+/* css homepage */
+.container-fluid {
+    padding: 0;
+    padding-right: 0;
+  }
+
+/* mengatur jarak antar kata pada navbar*/
+.navbar-nav .nav-item {
+    font-size: 28px;
+    margin-right: 50px; /* Atur sesuai keinginan  */
+}
+  
+/* mengatur jarak antar kata pada navbar*/
+.navbar-nav .nav-item:last-child {
+    font-size: 28px;
+    margin-right: 15px; /* Menghapus margin pada elemen terakhir */
+} 
+
+.kotak-berita {
+    padding: 20px;
+}
+.news-box {
+    background-color: white;
+    padding: 30px;
+    margin: 30px 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.news-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.news-title {
+    margin-left: 20px;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.news-date {
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: 30px;
+}
+
+.news-text {
+    margin-left: 20px;
+    margin-top: 20px;
+    font-size: 20px;
+    text-align: left;
+}
+
+.postingan-terbaru {
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.div-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 15px;
+    justify-content: center;
+}
+
+.div-4 {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    border-radius: 8px;
+    align-items: center;
+}
+
+.div-5 {
+    text-align: center;
+    min-width: 30px;
+}
+
+.column {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: #3B404D;
+    font-size: 25px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 8px;
+}
+
+.column-2 {
+    flex: 1;
+}
+
+.judul-berita {
+    font-size: 20px;
+    font-weight: 400;
+    margin: 0;
+    text-align: left;
+    flex-grow: 1;
+    padding-left: 15px;
+    padding-right: 30px;
+}
+}
+@media (min-width: 992px) {
+    .news-title {
+        font-size: 30px;
+    }
+    .news-date {
+        font-size: 26px;
+    }
+    .news-text {
+        font-size: 20px;
+    }
+    .judul-berita {
+        font-size: 30px;
+    }
+}
+     /* css footer */
+     .footer {
+        background-color: #3b404d;
+        color: #fff;
+        padding: 40px 40px;
+      }
+    
+    .footer-info {
+        margin-left: 80px;
+        margin-top: 5px;
+        font-weight: 400;
+        font-size: 20px;
+    }
+      
+    .footer-navigation {
+        padding-left: 50px;
+    }
+
+    .footer-navigation a {
+        padding-left: 2px;
+    }
+    
+    .footer .footer-logo {
+        max-width: 100px;
+        margin: 10px 0;
+        margin-top: 20px;
+    }
+      
+    .footer h4 {
+        margin-bottom: 15px;
+    }
+      
+    .footer a {
+        font-size: 18px;
+        color: #fff;
+        text-decoration: none;
+    }
+    
+    .footer-contact {
+        font-size: 18px;
+    }
+      
+    .footer a:hover {
+        text-decoration: underline;
+    }
+      
+    .social-icons a {
+        font-size: 20px;
+        margin-right: 8px;
+        color: #fff;
+    }
+    
+    @media (min-width: 675px) {
+        body {
+            padding-right: 0;
+            object-fit: cover;
+
+            .col-lg-4 {
+                padding-left: 50px;
+                padding-bottom: 40px;
+            }
+
+            .postingan-terbaru {
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 40px;
+            }
+        }
+    
+        .footer-info, .footer-logo {
+            margin-left: 30px;
+        }
+    
+        .footer-navigation {
+            padding-left: 2px;
+        }
+    
+        .footer-info {
+            margin-bottom: 5px;
+        }
+        .footer-logo {
+            margin-top: 5px;
+            height: auto
+        }
+        .footer h4 {
+            margin-bottom: 15px;
+            margin-left: 30px;
+        }
+          
+        .footer a {
+            margin-left: 30px;
+            font-size: 18px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-contact {
+            margin-left: 0px;
+        }
+    
+        .footer-contact p {
+            margin-left: 30px;
+        }
+        
+        .footer a:hover {
+            margin-left: 20px;
+            text-decoration: underline;
+        }
+          
+        .social-icons a {
+            margin-left: 30px;
+            font-size: 20px;
+            color: #fff;
+        }
+    }
+    /* Media query untuk ukuran layar 320px */
+    @media (max-width: 320px) {
+        body {
+            padding-right: 0;
+            object-fit: cover;
+
+            .kotak-berita {
+                padding: 8px;
+            }
+
+            .postingan-terbaru {
+                padding: 8px;
+                text-align: center;
+                margin-bottom: 40px;
+                margin-top: 5px;
+            }
+
+            .news-box {
+                background-color: white;
+                padding: 20px;
+                margin: 20px 7px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                text-align: left;
+            }
+            
+            .div-5 {
+                margin-left: 2px;
+                padding-left: 2px;
+            }
+
+            .div-3 {
+                padding-left: 20px;
+            }
+
+            .news-title {
+                font-size: 25px;
+                margin-left: 5px;
+            }
+    
+            .news-date {
+                font-size: 20px;
+                margin-left: 5px;
+            }
+            .news-text {
+                font-size: 15px;
+                margin-left: 5px;
+            }
+
+            .judul-berita {
+                font-size: 18px;
+            }
+        }
+
+        .footer-info, .footer-logo {
+            margin-left: 10px;
+            font-size: 15px;
+        }
+    
+        .footer-navigation {
+            padding-left: 2px;
+        }
+    
+        .footer-info {
+            margin-bottom: 5px;
+        }
+    
+        .footer-logo {
+            margin-top: 0px;
+            height: auto
+        }
+        .footer h4 {
+            margin-bottom: 15px;
+            margin-left: 8px;
+            font-size: 15px;
+        }
+          
+        .footer a {
+            margin-left: 8px;
+            font-size: 12px;
+            color: #fff;
+            text-decoration: none;
+        }
+        
+        .footer-contact {
+            margin-left: 0px;
+            font-size: 15ps;
+        }
+    
+        .footer-contact p {
+            margin-left: 8px;
+            font-size: 12px;
+        }
+        
+        .footer a:hover {
+            margin-left: 8px;
+            text-decoration: underline;
+        }
+          
+        .social-icons a {
+            margin-left: 8px;
+            font-size: 20px;
+            color: #fff;
+        }
+    }

@@ -1,0 +1,791 @@
+      /* css navbar */
+      .navbar-brand .angkotbiru {
+        height: 110px;  
+        width: auto;
+        padding-left: 20px;
+      }
+    
+      /* css homepage */
+      .container-fluid {
+        padding: 0;
+      }
+    
+      /* mengatur jarak antar kata pada navbar*/
+      .nav-item .nav-link {
+        font-size: 25px;
+        margin-right: 50px; /* Atur sesuai keinginan  */
+      }
+        
+      /* mengatur jarak antar kata pada navbar*/
+      .nav-link .nav-item:last-child {
+        font-size: 25px;
+        margin-right: 15px; /* Menghapus margin pada elemen terakhir */
+      } 
+      
+.hamburger-menu {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 1000px) {
+    nav ul {
+        display: none;
+    }
+    .hamburger-menu {
+        display: block;
+    }
+}
+
+.info-header {
+    background-color: #3B404D;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+@media (max-width: 1920px) and (min-width: 1440px ) {
+    .info-header {
+        padding: 70px 0;
+        font-size: 28px;
+    }
+
+    nav ul li a {
+        font-size: 20px;
+        margin-right: 60px;
+    }
+}
+
+@media (max-width: 320px) {
+    header {
+        background-color: #fff;
+        margin-right: -280px;
+    }
+
+    .info-header {
+        background-color: #3B404D;
+        margin-right: -280px;
+    }
+}
+
+/*/////////////////////////// Body ////////////////////////////////*/
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle, #FFEEA7 5%, #fff 100%);
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.transport-options { /* konten Pilih Jenis Transportasi */
+    padding: 50px 0;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.transport-options h3 { /* tulisan Pilih Jenis Transportasi */
+    margin-left: 50px;
+}
+
+.transport-options .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 15px;
+}
+
+.transport-options button { /* kotak daftar bus */
+    background-color: white;
+    color: #75a478;
+    border-color: #75a478;
+    padding: 15px 30px; 
+    font-size: 16px;
+    cursor: pointer;
+    width: 768px;
+    height: 80px;
+    margin: 0 5px 0 5px;
+    font-family: "Poppins", sans-serif;
+    font-size: 18px;
+}
+
+.transport-options button:hover { /* perubahan warna saat kursor menuju kotak daftar bus */
+    background-color: #45a049;
+}
+
+#btn-angkot { /* kotak daftar angkot */
+    background-color: #75a478;
+    color: white;
+    margin-left: 17px;
+    border: 1px solid #74AF83;
+}
+
+#btn-angkot:hover { /* perubahan warna saat kursor berada di kotak daftar angkot */
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.form-jenisbus { /* konten Pilih Jenis Angkot */
+    text-align: left;
+    margin-left: 50px;
+}
+
+.form-jenisbus h3 { /* tulisan Pilih Jenis Angkot */
+    padding: 10px 0;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.form-jenisbus select { /* kotak BIS 1 */
+    padding: 15px; 
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    width: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    font-family: "Poppins", sans-serif;
+}
+
+.bus-info {
+    text-align: center;
+    padding: 50px 0;
+}
+
+.bus-info .container { /* konten Tujuan Angkutan-Rute Perlintasan */
+    display: flex;
+    flex-direction: column;
+    margin-top: -190px;
+    margin-left: 698px;
+}
+
+.bus-info .form-tujuan { /* konten Tujuan Angkutan */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 30px;
+}
+
+.bus-info .form-tujuan h3 { /* tulisan Tujuan Angkutan */
+    margin-bottom: 27px;
+}
+ 
+.bus-info .form-tujuan input { /* kotak tujuan angkutan */
+    padding: 15px;
+    font-size: 16px;
+    width: 600px;
+    margin-bottom: 20px;
+}
+
+.bus-info .form-rute { /* konten Rute Perlintasan */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px; 
+}
+
+.bus-info .form-rute h3 { /* tulisan Rute Perlintasan*/
+    margin-bottom: 27px;
+}
+
+.bus-info .form-rute input {
+    padding: 10px;
+    font-size: 16px;
+    width: 200px;
+    margin-bottom: 20px;
+} 
+
+.bus-info .school-list { /* kotak sekolah yang dilintasi dan mencakup didalamnya*/
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 275px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+    width: 600px;
+}
+ 
+.school-list ul {
+    margin-top: -5px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.school-list li {
+    text-align: left;
+    margin-top: 10px;
+}
+
+.bus-info .route-list { /* kotak Rute Perlintasan dan mencakup didalamnya*/
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 275px;
+    overflow-y: scroll;
+    background-color: #f9f9f9;
+    width: 600px; 
+}
+
+.bus-info .route-list ul { /* daftar rute perlintasan*/
+    list-style-type: disc;
+    margin: -5px 50px -5px -60px;
+    margin-left: 10px;
+}
+
+.bus-info .route-list li { /* isi konten rute perlintasan*/
+    margin: 10px 0;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+@media (max-width:800px) {
+    .transport-options .buttons {
+        display: block;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        font-weight: bold;
+        margin-left: -30px;
+        justify-content: center;
+    }
+
+    #btn-angkot {
+        background-color: #75a478;
+        color: white;
+        text-align: left;
+        margin: auto;
+        border: 1px solid black;
+        border-bottom: #fff;
+    }
+
+    #btn-bus {
+        background-color: white;
+        color: #75a478;
+        text-align: left;
+        margin: auto;
+        border: 1px solid black;
+        border-top: #fff;       
+    }
+
+    .buttons:hover {
+        opacity: 0.8;
+    }
+}
+
+@media (max-width: 1920px) and (min-width:1800px) {
+    .transport-options {
+        font-size: 22px;
+    }
+
+    .transport-options button {
+        width: 886px;
+        font-size: 22px;
+    }
+
+    #btn-angkot {
+        height: 100px;
+    }
+
+    #btn-bus {
+        height: 100px;
+    }
+
+    #jenis-bus {
+        font-size: 22px;
+    }
+    
+    .form-jenisbus h3 {
+        font-size: 27px;
+    }
+
+    .bus-info {
+        font-size: 22px;
+    }
+
+    .bus-info .container { /* konten sekolah yang dilintasi-Rute Perlintasan */
+        margin-left: 997px;
+        margin-top: -228px;
+    }
+
+    .bus-info .school-list {
+        width: 863px;
+    }
+
+    .bus-info .route-list { /* kotak Rute Perlintasan dan mencakup didalamnya*/
+        width: 863px;
+    } 
+}
+
+@media (max-width: 1440px) {
+    .bus-info .container { /* konten Tujuan Angkutan-Rute Perlintasan */
+        margin-left: 706px;
+    }
+
+    .form-jenisbus { /* konten Pilih Jenis Bus */
+        margin-left: 33px;
+    }
+
+    .bus-info .school-list {
+        width: 623px;
+    }
+
+    .bus-info .route-list {
+        width: 625px;
+    }
+
+    .transport-options button {
+        width: 657px;
+    }
+
+    .bus-info {
+        margin-left: 50px;
+    }
+
+    .transport-options { /* konten Pilih Jenis Transportasi */
+        margin-left: 10px;
+    }
+
+    .transport-options h3 { /* tulisan Pilih Jenis Transportasi */
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .bus-info .form-tujuan input {
+        width: 538px;
+    }
+    .bus-info .route-list {
+        width: 625px;
+    }
+
+    .bus-info .container { /* konten sekolah perlintasan-Rute Perlintasan */
+        margin-top: -10px;
+        margin-left: 10px;
+    }
+
+    .rute-perlintasan .route-list {
+        width: 100px;
+    }
+}
+
+@media (max-width: 675px) {
+    .transport-options h3 {
+        margin-left: 57px;
+    }
+
+    #btn-bus {
+        width: 510px;
+        margin-left: -10px;      
+    }
+
+    #btn-angkot {
+        width: 510px;
+        margin-left: -10px;
+    }
+
+    .bus-info .school-list {
+        width: 500px;
+    }
+    
+    .bus-info .route-list {
+        width: 500px;
+    }
+}
+
+@media (max-width:320px) {
+    #btn-angkot {
+        width: 470px;
+        margin-left: 63px;
+    }
+
+    #btn-bus {
+        width: 470px;
+        margin-left: 63px;
+    }
+
+    #jenis-bus {
+        margin-left: 76px;
+    }
+
+    .form-jenisbus {
+        margin-top: -50px;
+    }
+
+    .form-jenisbus h3 {
+        margin-left: 76px;
+    }
+
+    .bus-info {
+        margin-top: -40px;
+    }
+
+    .bus-info .form-tujuan input {
+        width: 265px;
+    }
+
+    .bus-info .school-list {
+        width: 456px;
+        font-size: 14px;
+    }
+
+    .form-rute {
+        margin-top: -15px;
+    }
+
+    .bus-info .route-list {
+        width: 456px;
+        font-size: 14px;
+    }
+
+    .bus-info .container .form-tujuan h3 {
+        margin-left: 0;
+    }
+
+    .form-jenisbus { /* konten Pilih Jenis bus */
+        margin-left: -15px;
+    }
+
+    .form-jenisbus select {
+        width: 200px;
+        font-size: 14px;
+        margin-left: 42px;
+    }
+
+    .bus-info .form-tujuan h3 { /* tulisan Tujuan Angkutan */
+        margin-left: -40px;
+    }
+
+    .bus-info .form-tujuan input { /* kotak tujuan angkutan */
+        width: 240px;
+        font-size: 14px;
+        margin-left: -40px;
+    }
+    
+}
+
+
+/*/////////////////////////// Footer ////////////////////////////////*/
+
+
+.footer {
+    background-color: #3B404D;
+    color: white;
+    padding: 30px 0;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    padding: 0 30px 0 30px;
+    font-size: 10px;
+}
+
+.footer-info {
+    flex: 1;
+    min-width: 200px;
+    padding: 0 100px;
+    text-align: left;
+    margin-right: 60px;
+    padding-right: 5px;
+}
+
+.footer-info p {
+    margin: 20px 0 -10px 0;
+    padding: -5px 0 0 -5px;
+}
+
+.footer-info p+p {
+    margin-top: 13px;
+}
+
+.footer-logo {
+    margin-top: 20px;
+    width: 80px;
+    height: auto;
+}
+
+.footer-navigation, .footer-navigation2, .footer-quick-link, .footer-contact, .footer-social {
+    flex: 1;
+}
+
+.footer-navigation, .footer-navigation2 {
+    margin-right: -160px;
+}
+
+.footer-quick-link {
+    margin-left: 30px;
+}
+
+.footer-contact {
+    margin-top: 10px;
+    margin-left: -70px;
+}
+
+.footer-social {
+    margin-left: -40px;
+}
+
+.footer-navigation h3, .footer-navigation2 h3, .footer-quick-link h3, .footer-contact h3, .footer-social h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.footer-navigation ul, .footer-navigation2 ul, .footer-quick-link ul, .footer-contact ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer-navigation ul li, .footer-navigation2 ul li, .footer-quick-link ul li, .footer-contact ul li {
+    margin-bottom: -5px;
+}
+
+.footer-navigation ul li a, .footer-navigation2 ul li a, .footer-quick-link ul li a, .footer-contact ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-navigation ul li a:hover, .footer-navigation2 ul li a:hover, .footer-quick-link ul li a:hover, .footer-contact ul li a:hover {
+    color: #FFD700;
+}
+
+.footer-contact p {
+    margin-bottom: 10px;
+}
+
+.footer-contact a {
+    color: white;
+    text-decoration: none; 
+}
+
+.footer-contact a:hover {
+    color: #FFD700;
+} 
+
+.footer-social .social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social .social-icons a {
+    color: white;
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.footer-social .social-icons a:hover {
+    color: #FFD700;
+}
+
+@media (max-width: 1920px) and (min-width: 1800px) {
+    .footer-container {
+        margin: 20px 0 20px 0;
+        font-size: 13px;
+    }
+
+    .footer-container h3 {
+        font-size: 16px;
+    }
+}
+
+/* Responsive Styles Tablet */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-info {
+        margin-bottom: -300px;
+        padding-bottom: -200px;
+        margin-top: 200px;
+        text-align: left;
+        margin-left: -40px;
+    }
+
+    .footer-info img {
+        margin-right: 8px;
+    }
+
+    .footer-contact {
+        display: none;
+    }
+
+    .footer-navigation, .footer-navigation2 {
+        margin-left: 60px;
+    }
+
+    .footer-navigation2 {
+        margin-top: -40px;
+    }
+
+    .footer-quick-link, .footer-social {
+        margin-left: 400px;
+    }
+
+    .footer-quick-link {
+        position: absolute;
+        margin-top: 11px;
+    }
+
+    .footer-social {
+        margin-bottom: 120px;
+        margin-top: -80px;
+    }
+
+    .footer-social h3 {
+        text-align: left;
+    }
+
+    .footer-navigation, .footer-navigation2, .footer-quick-link, .footer-social {
+        flex: 1;
+    }
+    
+    .footer-social {
+        text-align: center;
+    }
+}
+
+/* Responsive Styles Hp */
+@media (max-width: 320px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-info {
+        margin-bottom: -300px;
+        padding-bottom: -200px;
+        margin-top: 200px;
+        text-align: left;
+        margin-left: -40px;
+    }
+
+    .footer-info img {
+        margin-right: 8px;
+    }
+
+    .footer-contact {
+        display: none;
+    }
+
+    .footer-navigation, .footer-navigation2 {
+        margin-left: 60px;
+    }
+
+    .footer-navigation2 {
+        margin-top: -40px;
+    }
+
+    .footer-quick-link, .footer-social {
+        margin-left: 400px;
+    }
+
+    .footer-quick-link {
+        position: absolute;
+        margin-top: 11px;
+        text-align: right;
+    }
+
+    .footer-quick-link h3 {
+        margin-left: -10px;
+    }
+
+    .footer-quick-link li a {
+        margin-left: -40px;
+    }
+
+    .footer-social {
+        margin-bottom: 120px;
+        margin-top: -80px;
+        margin-left: 330px;
+    }
+
+    .footer-social h3 {
+        text-align: right;
+    }
+
+    .footer-navigation, .footer-navigation2, .footer-quick-link, .footer-social {
+        flex: 1;
+    }
+    
+    .footer-social {
+        text-align: center;
+    }
+
+    .footer {
+        margin-right: -280px;
+    }
+}
+
+/*/////////////////////////// Sidebar ////////////////////////////////*/
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 80%;
+    background-color: #3B404D;
+    padding-top: 60px;
+    transition: 0.3s;
+    z-index: 1000;
+    max-height: 750px;
+}
+
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    text-align: right;
+    margin-right: 30px;
+    border-bottom: 1px solid white;
+    margin-left: 30px;
+}
+
+.sidebar a:hover {
+    background-color: #575d6a;
+}
+
+.sidebar.active {
+    right: 0;
+}
+
+.hamburger-menu, .hamburger-menuafter {
+    cursor: pointer;
+}
+
+.hamburger-menuafter {
+    color: white;
+    margin: 10px;
+    margin-left: 200px;
+}
+
+/* Hamburger menu color change when sidebar is active */
+.hamburger-menu.open i, .hamburger-menuafter.open i {
+    color: white;
+}
+
+/* Styling for the image and text in the sidebar */
+.sidebar-image {
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+    height: auto;
+    margin-top: 100%;
+}
+
+.sidebar-text {
+    color: white;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 18px;
+    margin-top: -6%;
+}
